@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="editor.template.client.html"><i class="fa fa-times pull-left wbdv-course-editor wbdv-close" aria-hidden="true"></i></a>
+        <a class="navbar-brand wbdv-course-title" href="#">CS5610-Course Editor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigatebar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active wbdv-lesson">
+                    <a class="nav-link" href="#">Build</a>
+                </li>
+                <li class="nav-item active wbdv-lesson">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item active wbdv-lesson">
+                    <a class="nav-link" href="#">Theme</a>
+                </li>
+                <li class="nav-item active wbdv-lesson">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-plus wbdv-lesson-add-btn" aria-hidden="true"></i></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search course" aria-label="Search">
+                <button class="btn btn-sm btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <br/>
+
+                    <ul class="list-group wbdv-module-list">
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-item-title">HTML </span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item active wbdv-module-item"><span class="wbdv-module-title">CSS </span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-title">jQuery</span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-title">React</span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-title">Redux</span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-title">Native</span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-title">Angular</span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item wbdv-module-item"><span class="wbdv-module-title">Node</span> <i class="fa fa-times pull-right wbdv-module-item-delete-btn" aria-hidden="true"></i></li>
+                        <li class="list-group-item"><i class="fa fa-plus pull-right wbdv-module-add" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8">
+
+                <br/>
+                <div>
+                    <ul class="nav nav-pills wbdv-topic-pill-list">
+                        <li class="nav-item"><a class="nav-link wbdv-topic" href="#">Topic 1</a></li>
+                        <li class="nav-item"><a class="nav-link active wbdv-topic" href="#">Topic 2</a></li>
+                        <li class="nav-item"><a class="nav-link wbdv-topic" href="#">Topic 3</a></li>
+                        <li class="nav-item"><a class="nav-link wbdv-topic" href="#">Topic 4</a></li>
+                        <i class="fa fa-plus-circle fa-3x pull-right wbdv-topic-add" aria-hidden="true"></i>
+                    </ul>
+                </div>
+
+                <br/>
+                <br/>
+                <div class="wbdv-light-grey-border">
+                    <br/>
+                    <h3>Heading Widgets</h3>
+
+                    <span class="pull-right">
+                            <a href="#" class="btn btn-warning"><i class="fa fa-arrow-up"></i></a>
+                            <a href="#" class="btn btn-warning"><i class="fa fa-arrow-down"></i></a>
+                            <select>
+                                <option>Heading</option>
+                                <option>Slides</option>
+                                <option>Videos</option>
+                                <option>Documents</option>
+                            </select>
+                            <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                    </span>
+                    <br/>
+
+                    <br/>
+                    <div>
+                        <input class="form-control" placeholder="Heading text">
+                        <br/>
+                        <select class="form-control">
+                            <option>Heading 1</option>
+                            <option>Heading 2</option>
+                            <option>Heading 3</option>
+                            <option>Heading 4</option>
+                        </select>
+                        <br/>
+                        <input class="form-control" placeholder="Widget name">
+                    </div>
+                    <div>
+                        <ul>
+                            <button type="button" class="btn btn-success pull-right">Save</button>
+                            <button type="button" class="btn btn-danger pull-right">preview</button>
+
+                        </ul>
+                    </div>
+                    <h3>Preview</h3>
+                    <h1>Heading text</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

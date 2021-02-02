@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="dashboard.list.template.client.html.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+
+    <a class="navbar-brand" href="./course-list.template.client.html"><span class="wbdv-label wbdv-course-manager">Course Manager</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 wbdv-field wbdv-new-course" type="search" placeholder="New Course Title" aria-label="Search">
+            <button class="btn btn-danger my-2 my-sm-0 wbdv-button wbdv-add-course" type="submit">Add</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1>Dashboard Table</h1>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Owned by</th>
+            <th>Last Modified</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <a href="../editor/editor.template.client.html">
+                    <i class="fas fa-file"></i>
+                    CS5610
+                </a>
+            </td>
+            <td>jiatian</td>
+            <td>1/25/2021</td>
+            <td>
+                <i class="fas fa-trash"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+                    <i class="fas fa-file"></i>
+                    CS5614
+                </a>
+            </td>
+            <td>jiatian</td>
+            <td>1/25/2021</td>
+            <td>
+                <i class="fas fa-trash"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+                    <i class="fas fa-file"></i>
+                    CS5613
+                </a>
+            </td>
+            <td>jiatian</td>
+            <td>1/25/2021</td>
+            <td>
+                <i class="fas fa-trash"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+                    <i class="fas fa-file"></i>
+                    CS5612
+                </a>
+            </td>
+            <td>jiatian</td>
+            <td>1/25/2021</td>
+            <td>
+                <i class="fas fa-trash"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+                    <i class="fas fa-file"></i>
+                    CS5611
+                </a>
+            </td>
+            <td>jiatian</td>
+            <td>1/25/2021</td>
+            <td>
+                <i class="fas fa-trash"></i>
+            </td>
+        </tr>
+        </tbody>
+        <!--        <tfoot></tfoot>-->
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="profile.style.client.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <a href="../index.html" >
+        Home
+    </a>
+    <h1 class = color-yellow>Profile</h1>
+    <div class="alert alert-success" role="alert">
+        Save successfully!!!
+    </div>
+
+    <form>
+        <fieldset disabled>
+            <div class="form-group row">
+                <label for="usernamefield" class="col-sm-2 col-form-label">
+                    Username </label>
+                <div class="col-sm-10">
+                    <input class="form-control wbdv-field wbdv-username"
+                           id="usernamefield"
+                           value="Alice">
+                </div>
+            </div>
+        </fieldset>
+
+
+        <div class="form-group row">
+            <label for="phonefield" class="col-sm-2 col-form-label">
+                Phone </label>
+            <div class="col-sm-10">
+                <input class="form-control wbdv-field wbdv-phone"
+                       id="phonefield"
+                       value="(888)123-4567">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="emailfield" class="col-sm-2 col-form-label">
+                Email </label>
+            <div class="col-sm-10">
+                <input type="email"
+                       class="form-control wbdv-field wbdv-email"
+                       id="emailfield"
+                       value="alice@northeastern.edu">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="date" class="col-sm-2 col-form-label">
+                Date of Birth </label>
+            <div class="col-sm-10">
+                <input type="date"
+                       class="form-control wbdv-field wbdv-dob"
+                       id="date"
+                       value="2021-02-01">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="roleFld" class="col-sm-2 col-form-label">
+                Role </label>
+            <div class="col-sm-10">
+                <select class="form-control wbdv-field wbdv-role"
+                        id="roleFld">
+                    <option value="Faculty">Faculty</option>
+                    <option value="Student">Student</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-primary btn-block wbdv-update">Update</button>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <a href="../index.html" class="btn btn-danger btn-block wbdv-logout">Logout</a>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
